@@ -215,6 +215,41 @@ em.accent{font-style:italic;color:var(--primary)}
 @media(prefers-reduced-motion:reduce){
   *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
 }
+.logo,
+.logo > span {
+  min-width: 0;
+}
+
+.header__actions {
+  flex: none;
+}
+
+@media (max-width: 380px) {
+  .header__inner {
+    gap: .5rem;
+  }
+
+  .logo img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo__sub {
+    font-size: .56rem;
+    letter-spacing: .06em;
+  }
+
+  .header__actions {
+    gap: .35rem;
+  }
+
+  .cart-btn,
+  .burger {
+    width: 40px;
+    height: 40px;
+    flex: none;
+  }
+}
 </style>
 </head>
 <body>
